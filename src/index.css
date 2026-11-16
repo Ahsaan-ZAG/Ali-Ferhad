@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+
+  /* Burgundy Royale Core Palette */
+  --color-burgundy: #35151F;
+  --color-burgundy-deep: #240D14;
+  --color-royal-wine: #8B2635;
+  --color-champagne: #D6B88C;
+  --color-warm-ivory: #F5EEE5;
+  --color-soft-white: #FFFFFF;
+
+  /* Supporting Neutral & Surface Tokens */
+  --color-charcoal: #35151F;
+  --color-ivory: #F5EEE5;
+  --color-beige: #EAE0D2;
+  --color-taupe: #D6B88C;
+  --color-muted-grey: #76676A;
+  --color-deep-black: #1D0A10;
+  --color-dark-surface: #2B1019;
+  --color-light-surface: #FFFFFF;
+  --color-light-border: #E2D5C5;
+  --color-dark-border: #552A37;
+  --color-primary-text: #35151F;
+  --color-secondary-text: #6D595E;
+  --color-dark-text: #F5EEE5;
+}
+
+:root {
+  /* Palette Tokens */
+  --bg-ivory: #F5EEE5;
+  --bg-surface: #FFFFFF;
+  --bg-charcoal: #35151F;
+  --burgundy-primary: #35151F;
+  --burgundy-deep: #240D14;
+  --royal-wine: #8B2635;
+  --champagne-gold: #D6B88C;
+  --warm-ivory: #F5EEE5;
+  --soft-white: #FFFFFF;
+  --text-primary: #35151F;
+  --text-secondary: #6D595E;
+  --text-light: #F5EEE5;
+  --border-light: #E2D5C5;
+  --border-dark: rgba(214, 184, 140, 0.28);
+  --accent-taupe: #D6B88C;
+
+  /* Luxury Card System Design Tokens */
+  --card-bg-light: #FFFFFF;
+  --card-bg-ivory: #FAF6F0;
+  --card-bg-dark: #35151F;
+  --card-bg-featured: #2A1018;
+  --card-border-light: rgba(53, 21, 31, 0.14);
+  --card-border-hover: rgba(139, 38, 53, 0.45);
+  --card-border-dark: rgba(214, 184, 140, 0.28);
+  --card-border-dark-hover: rgba(214, 184, 140, 0.65);
+  --card-radius-outer: 18px;
+  --card-radius-media: 12px;
+  --card-radius-control: 10px;
+  --card-shadow-subtle: 0 8px 24px -10px rgba(53, 21, 31, 0.08), 0 2px 6px -2px rgba(53, 21, 31, 0.04);
+  --card-shadow-elevated: 0 18px 40px -14px rgba(53, 21, 31, 0.16), 0 4px 12px -4px rgba(53, 21, 31, 0.06);
+  --card-shadow-dark: 0 18px 42px -14px rgba(14, 4, 8, 0.48);
+  --card-transition: 380ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Manrope", system-ui, -apple-system, sans-serif;
+    background-color: #F5EEE5;
+    color: #35151F;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+
+  button, a, input, select, textarea {
+    outline-offset: 2px;
+  }
+
+  :focus-visible {
+    outline: 2px solid #8B2635;
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.luxury-card-light {
+  background-color: var(--card-bg-light);
+  border: 1px solid var(--card-border-light);
+  border-radius: var(--card-radius-outer);
+  box-shadow: var(--card-shadow-subtle);
+  transition: transform var(--card-transition), box-shadow var(--card-transition), border-color var(--card-transition);
+}
+
+.luxury-card-light:hover {
+  border-color: var(--card-border-hover);
+  box-shadow: var(--card-shadow-elevated);
+}
+
+.luxury-card-dark {
+  background-color: var(--card-bg-dark);
+  border: 1px solid var(--card-border-dark);
+  border-radius: var(--card-radius-outer);
+  box-shadow: var(--card-shadow-dark);
+  transition: transform var(--card-transition), box-shadow var(--card-transition), border-color var(--card-transition);
+}
+
+.luxury-card-dark:hover {
+  border-color: var(--card-border-dark-hover);
+}
+
+.editorial-hero-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3rem, 6vw, 6.25rem);
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.editorial-section-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.15rem, 4vw, 4rem);
+  line-height: 1.03;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.editorial-subheading {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.5rem, 2.3vw, 2.15rem);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,170 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global default-deny safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerified() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isVerified() && (
+        request.auth.token.email == 'ahsaanahmed0002@gmail.com' ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidUserProfile(data, userId) {
+      return data.keys().hasAll(['uid', 'email', 'role', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly(['uid', 'email', 'displayName', 'role', 'phone', 'createdAt', 'updatedAt'])
+        && data.uid is string && data.uid == userId
+        && data.email is string && data.email.size() >= 3 && data.email.size() <= 200
+        && data.role is string && data.role in ['customer', 'admin']
+        && (!('displayName' in data) || (data.displayName is string && data.displayName.size() <= 120))
+        && (!('phone' in data) || (data.phone is string && data.phone.size() <= 40))
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    function isValidCartItem(data, userId) {
+      return data.keys().hasAll(['userId', 'productId', 'sku', 'quantity', 'updatedAt'])
+        && data.keys().hasOnly(['userId', 'productId', 'sku', 'quantity', 'updatedAt'])
+        && data.userId is string && data.userId == userId
+        && data.productId is string && data.productId.size() <= 128
+        && data.sku is string && data.sku.size() > 0 && data.sku.size() <= 80
+        && data.quantity is int && data.quantity >= 1 && data.quantity <= 10
+        && data.updatedAt is timestamp;
+    }
+
+    function isValidWishlistItem(data, userId) {
+      return data.keys().hasAll(['userId', 'productId', 'addedAt'])
+        && data.keys().hasOnly(['userId', 'productId', 'preferredColor', 'addedAt'])
+        && data.userId is string && data.userId == userId
+        && data.productId is string && data.productId.size() <= 128
+        && (!('preferredColor' in data) || (data.preferredColor is string && data.preferredColor.size() <= 60))
+        && data.addedAt is timestamp;
+    }
+
+    function isValidAddress(data, userId) {
+      return data.keys().hasAll(['userId', 'recipientName', 'line1', 'city', 'postalCode', 'country', 'updatedAt'])
+        && data.keys().hasOnly(['userId', 'recipientName', 'line1', 'line2', 'city', 'state', 'postalCode', 'country', 'phone', 'isDefault', 'updatedAt'])
+        && data.userId is string && data.userId == userId
+        && data.recipientName is string && data.recipientName.size() > 0 && data.recipientName.size() <= 120
+        && data.line1 is string && data.line1.size() > 0 && data.line1.size() <= 200
+        && data.city is string && data.city.size() > 0 && data.city.size() <= 100
+        && data.postalCode is string && data.postalCode.size() > 0 && data.postalCode.size() <= 30
+        && data.country is string && data.country.size() > 0 && data.country.size() <= 80
+        && data.updatedAt is timestamp;
+    }
+
+    // Connection check document (read-only)
+    match /test/connection {
+      allow get: if true;
+    }
+
+    // Public catalog collections
+    match /products/{productId} {
+      allow get, list: if true;
+      allow write: if isAdmin();
+    }
+
+    match /collections/{collectionId} {
+      allow get, list: if true;
+      allow write: if isAdmin();
+    }
+
+    match /siteSettings/{settingId} {
+      allow get: if true;
+      allow write: if isAdmin();
+    }
+
+    // Customer profiles & private subcollections
+    match /users/{userId} {
+      allow get: if isValidId(userId) && (isOwner(userId) || isAdmin());
+      allow list: if isAdmin();
+      allow create: if isValidId(userId) && isVerified() && isOwner(userId)
+        && isValidUserProfile(incoming(), userId)
+        && incoming().role == 'customer'
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isValidId(userId) && isVerified() && (
+        isAdmin() || (
+          isOwner(userId)
+          && isValidUserProfile(incoming(), userId)
+          && incoming().uid == existing().uid
+          && incoming().role == existing().role
+          && incoming().createdAt == existing().createdAt
+          && incoming().updatedAt == request.time
+          && incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'phone', 'updatedAt'])
+        )
+      );
+      allow delete: if isAdmin();
+
+      match /cart/{itemId} {
+        allow get, list: if isOwner(userId) || isAdmin();
+        allow create: if isValidId(itemId) && isOwner(userId)
+          && isValidCartItem(incoming(), userId)
+          && incoming().updatedAt == request.time;
+        allow update: if isValidId(itemId) && isOwner(userId)
+          && isValidCartItem(incoming(), userId)
+          && incoming().updatedAt == request.time
+          && incoming().diff(existing()).affectedKeys().hasOnly(['quantity', 'updatedAt']);
+        allow delete: if isValidId(itemId) && (isOwner(userId) || isAdmin());
+      }
+
+      match /wishlist/{productId} {
+        allow get, list: if isOwner(userId) || isAdmin();
+        allow create: if isValidId(productId) && isOwner(userId)
+          && isValidWishlistItem(incoming(), userId)
+          && incoming().addedAt == request.time;
+        allow delete: if isValidId(productId) && (isOwner(userId) || isAdmin());
+      }
+
+      match /addresses/{addressId} {
+        allow get, list: if isOwner(userId) || isAdmin();
+        allow create, update: if isValidId(addressId) && isOwner(userId)
+          && isValidAddress(incoming(), userId)
+          && incoming().updatedAt == request.time;
+        allow delete: if isValidId(addressId) && (isOwner(userId) || isAdmin());
+      }
+    }
+
+    // Orders: owner read only; mutations via verified server API or admin
+    match /orders/{orderId} {
+      allow get: if isValidId(orderId) && (
+        isAdmin() || (isSignedIn() && existing().userId == request.auth.uid)
+      );
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow write: if isAdmin();
+    }
+
+    match /admins/{adminId} {
+      allow get: if isSignedIn() && request.auth.uid == adminId;
+      allow write: if false;
+    }
+  }
+}

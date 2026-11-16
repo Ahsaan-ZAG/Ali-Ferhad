@@ -1,0 +1,6 @@
+{
+  "name": "MAISON FORMA — Luxury Fashion House",
+  "description": "Architectural luxury fashion eCommerce platform featuring editorial collections, interactive 3D sculptural experiences, and full-stack storefront operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,115 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "Catalog product item with pricing in integer cents, category, collection slug, and active status.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "slug": { "type": "string", "maxLength": 160 },
+        "name": { "type": "string", "maxLength": 160 },
+        "category": { "type": "string", "enum": ["Outerwear", "Tailoring", "Dresses", "Knitwear", "Trousers"] },
+        "collectionSlug": { "type": "string", "maxLength": 160 },
+        "priceCents": { "type": "number" },
+        "currency": { "type": "string", "enum": ["USD", "EUR", "GBP"] },
+        "status": { "type": "string", "enum": ["active", "draft", "archived"] },
+        "isNewArrival": { "type": "boolean" },
+        "isBestSeller": { "type": "boolean" }
+      },
+      "required": ["id", "slug", "name", "category", "priceCents", "currency", "status"]
+    },
+    "Collection": {
+      "title": "Collection",
+      "description": "Curated editorial fashion collection.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "slug": { "type": "string", "maxLength": 160 },
+        "title": { "type": "string", "maxLength": 160 },
+        "season": { "type": "string", "maxLength": 80 },
+        "description": { "type": "string", "maxLength": 1200 }
+      },
+      "required": ["id", "slug", "title"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Authenticated customer profile isolated by UID.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "email": { "type": "string", "maxLength": 200 },
+        "displayName": { "type": "string", "maxLength": 120 },
+        "role": { "type": "string", "enum": ["customer", "admin"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role", "createdAt", "updatedAt"]
+    },
+    "CartItem": {
+      "title": "CartItem",
+      "description": "User persistent shopping bag line item.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "productId": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "sku": { "type": "string", "maxLength": 80 },
+        "quantity": { "type": "number" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "productId", "sku", "quantity", "updatedAt"]
+    },
+    "WishlistItem": {
+      "title": "WishlistItem",
+      "description": "User saved fashion item.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "productId": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "addedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "productId", "addedAt"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Verified eCommerce customer order with server-calculated totals.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "orderNumber": { "type": "string", "maxLength": 40 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "customerEmail": { "type": "string", "maxLength": 200 },
+        "paymentStatus": { "type": "string", "enum": ["pending", "authorized", "paid", "failed", "refunded"] },
+        "fulfillmentStatus": { "type": "string", "enum": ["pending", "confirmed", "processing", "shipped", "delivered", "cancelled", "refunded"] },
+        "totalCents": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "orderNumber", "customerEmail", "paymentStatus", "fulfillmentStatus", "totalCents", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": {
+      "schema": { "$ref": "#/entities/Product" },
+      "description": "Public catalog products, admin write only."
+    },
+    "/collections/{collectionId}": {
+      "schema": { "$ref": "#/entities/Collection" },
+      "description": "Public editorial collections, admin write only."
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Private customer profile isolated by UID."
+    },
+    "/users/{userId}/cart/{itemId}": {
+      "schema": { "$ref": "#/entities/CartItem" },
+      "description": "Customer persistent shopping bag items."
+    },
+    "/users/{userId}/wishlist/{productId}": {
+      "schema": { "$ref": "#/entities/WishlistItem" },
+      "description": "Customer saved wishlist items."
+    },
+    "/orders/{orderId}": {
+      "schema": { "$ref": "#/entities/Order" },
+      "description": "Customer orders readable by owner or admin."
+    }
+  }
+}

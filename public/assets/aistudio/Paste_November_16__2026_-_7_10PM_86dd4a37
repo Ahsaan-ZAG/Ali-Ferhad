@@ -1,0 +1,1926 @@
+# THE ULTIMATE ADVANCED MASTER ANTI-PROMPT
+# PREMIUM LUXURY FASHION ECOMMERCE PLATFORM
+## HUMAN-CENTERED DESIGN × IMMERSIVE 3D × FULL-STACK ENGINEERING
+
+---
+
+# 00 — ABSOLUTE PROJECT INSTRUCTIONS
+
+You are not a basic website generator.
+
+You are an elite multidisciplinary product development team consisting of:
+
+1. Creative Director.
+2. Luxury Fashion Art Director.
+3. Senior UI/UX Designer.
+4. Senior Product Designer.
+5. 3D Experience Designer.
+6. Motion Graphics Designer.
+7. Senior React Developer.
+8. Senior Next.js Developer.
+9. Backend Engineer.
+10. Database Architect.
+11. Security Engineer.
+12. SEO Specialist.
+13. Performance Engineer.
+14. Accessibility Specialist.
+15. Quality Assurance Engineer.
+
+Your responsibility is to design, architect, implement, test, optimize, and deliver a complete production-ready luxury fashion eCommerce platform.
+
+## PRIMARY VISUAL REFERENCE
+
+Use the supplied Creta Systems screen recording as the primary inspiration for:
+
+- Visual sophistication.
+- Minimalist navigation.
+- Oversized typography.
+- Premium spacing.
+- Asymmetric layouts.
+- Abstract 3D compositions.
+- Smooth animations.
+- Scroll interactions.
+- Editorial section transitions.
+- Overall design quality.
+
+IMPORTANT:
+
+This project is a fashion eCommerce platform, NOT a software agency website.
+
+Do not reproduce Creta Systems branding, logo, text, proprietary assets, or business identity.
+
+Translate its visual sophistication into an original luxury fashion identity.
+
+## APPROVED CREATIVE DIRECTION — DO NOT CHANGE
+
+- Hero composition: Hybrid Luxury — Option C.
+- 3D intensity: Medium.
+- Theme: Mixed Light + Dark.
+- Design language: Luxury Editorial + Futuristic Minimalism.
+- Primary aesthetic: Premium international fashion brand.
+- Main visual focus: Fashion photography and product presentation.
+- Secondary visual experience: Carefully integrated 3D.
+- Animation style: Smooth, sophisticated, cinematic.
+- Typography: Cormorant Garamond + Manrope.
+
+These decisions are locked.
+
+Do not independently replace the creative direction with a generic ecommerce template.
+
+## NON-NEGOTIABLE HUMANIZATION RULE
+
+EVERY SECTION, EVERY PAGE, EVERY COMPONENT, EVERY ANIMATION, EVERY DESIGN DECISION, EVERY DATABASE FEATURE, AND EVERY TECHNICAL IMPLEMENTATION MUST BE HUMANIZED.
+
+HUMANIZE THIS.
+
+HUMANIZE THE DESIGN.
+
+HUMANIZE THE TYPOGRAPHY.
+
+HUMANIZE THE LAYOUT.
+
+HUMANIZE THE CONTENT.
+
+HUMANIZE THE INTERACTIONS.
+
+HUMANIZE THE ANIMATIONS.
+
+HUMANIZE THE PRODUCT PRESENTATION.
+
+HUMANIZE THE CODE.
+
+HUMANIZE THE USER EXPERIENCE.
+
+HUMANIZE THE COMPLETE WEBSITE.
+
+Never generate repetitive, robotic, generic, predictable, artificial-looking, or obviously AI-generated output.
+
+The final experience must look like it was designed and developed by a highly experienced human creative and engineering team.
+
+---
+
+# 01 — PROJECT OBJECTIVE
+
+Build a complete premium fashion eCommerce platform with:
+
+- Luxury editorial homepage.
+- Fashion collections.
+- Product catalog.
+- Product details.
+- Advanced product filtering.
+- Product search.
+- Shopping cart.
+- Wishlist.
+- Customer authentication.
+- Secure checkout.
+- Order management.
+- Customer dashboard.
+- Admin dashboard.
+- Inventory management.
+- Discount and coupon management.
+- Responsive mobile shopping.
+- Premium 3D experiences.
+- Advanced animations.
+- Professional SEO.
+- Complete backend.
+- Persistent database.
+
+The website must be a real working eCommerce application, not just a frontend demonstration.
+
+HUMANIZE THIS PROJECT OBJECTIVE. Understand that customers are shopping for fashion, not exploring a technology demo.
+
+---
+
+# 02 — BRAND IDENTITY AND VISUAL DESIGN SYSTEM
+
+## 2.1 Brand identity
+
+Create a distinctive luxury fashion identity.
+
+Do not invent a final brand name, existing brand history, certifications, customer testimonials, or company achievements.
+
+Use a configurable brand identity until the actual brand details are supplied.
+
+Design a minimal wordmark placeholder that can later be replaced with the official logo.
+
+## 2.2 Exact color palette
+
+Use these design tokens:
+
+### Primary colors
+
+- Charcoal: #111111
+- Warm Ivory: #F3EFE7
+- Soft Beige: #E6DDD0
+- Taupe: #B8A58C
+- Pure White: #FFFFFF
+- Muted Grey: #85817A
+
+### Additional neutral colors
+
+- Deep Black: #080808
+- Dark Surface: #1B1B1B
+- Light Surface: #FAF8F4
+- Light Border: #D8D0C5
+- Dark Border: #343434
+- Primary Text: #171717
+- Secondary Text: #77716A
+- Dark Text: #F5F1EA
+
+### Semantic colors
+
+- Success: #287A4B
+- Warning: #A66A19
+- Error: #B53A35
+- Information: #486B8A
+
+Do not introduce random colors.
+
+Maintain contrast and consistency across all pages.
+
+## 2.3 Color distribution
+
+Use approximately:
+
+- 55% warm ivory and white.
+- 25% charcoal and black.
+- 15% fashion photography and natural tones.
+- 5% taupe and other subtle accents.
+
+These are art-direction guidelines, not rigid requirements for every screen.
+
+## 2.4 Typography
+
+Primary display font:
+Cormorant Garamond.
+
+Secondary font:
+Manrope.
+
+Typography hierarchy:
+
+- Hero heading: 88–112px desktop.
+- Section heading: 56–72px desktop.
+- Subheading: 28–36px.
+- Body text: 15–17px.
+- Navigation: 12–14px.
+- Micro labels: 10–12px.
+
+Use fluid responsive typography with CSS clamp().
+
+Use editorial serif headings and clean sans-serif interface typography.
+
+Avoid excessive font weights and inconsistent type scales.
+
+## 2.5 Spacing
+
+Use a consistent spacing scale:
+
+4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px, 80px, 120px.
+
+Desktop content maximum width: 1440px.
+
+Use generous whitespace.
+
+## 2.6 Components
+
+Define consistent:
+
+- Buttons.
+- Product cards.
+- Navigation links.
+- Form controls.
+- Badges.
+- Dropdowns.
+- Modal windows.
+- Drawers.
+- Accordions.
+- Product image galleries.
+- Loading skeletons.
+- Toast notifications.
+- Empty states.
+- Error states.
+
+HUMANIZE THIS SECTION. The complete visual identity must feel original, cohesive, sophisticated, and intentionally art-directed. Never use arbitrary colors, default-looking components, or robotic typography combinations.
+
+---
+
+# 03 — HEADER AND NAVIGATION
+
+Create a premium minimal fashion header.
+
+## Desktop header
+
+Left:
+- Official brand logo.
+
+Center:
+- Shop.
+- Women.
+- Men.
+- Collections.
+- New Arrivals.
+
+Right:
+- Search.
+- Account.
+- Wishlist.
+- Shopping Bag.
+
+Only show categories relevant to the actual product catalog.
+
+## Announcement bar
+
+Include configurable announcements such as:
+
+- New collection launches.
+- Shipping information.
+- Seasonal campaigns.
+
+Do not show fake discounts or unverified shipping promises.
+
+## Navigation behavior
+
+- Transparent header over the hero.
+- Smooth background transition while scrolling.
+- Sticky navigation.
+- Elegant full-screen menu overlay.
+- Animated menu opening and closing.
+- Active navigation indicators.
+- Keyboard accessible controls.
+
+## Mobile navigation
+
+- Compact brand logo.
+- Search.
+- Shopping bag.
+- Menu toggle.
+- Full-screen navigation overlay.
+- Large readable navigation links.
+
+HUMANIZE THIS SECTION. Navigation must feel natural, effortless, elegant, and designed around real shopping behavior.
+
+---
+
+# 04 — HERO SECTION: HYBRID LUXURY EXPERIENCE
+
+This is the signature visual experience of the entire website.
+
+## Layout
+
+Use an asymmetric split composition.
+
+Left side:
+
+- Small collection label.
+- Oversized editorial headline.
+- Short brand statement.
+- Primary CTA.
+- Secondary CTA.
+- Minimal supporting information.
+
+Right side:
+
+- Premium fashion campaign photograph.
+- Carefully positioned abstract 3D object.
+- Soft atmospheric lighting.
+- Subtle depth and motion.
+
+## Example headline direction
+
+"Beyond the ordinary."
+
+"Designed to be remembered."
+
+"An expression of individuality."
+
+These are creative examples. Choose final copy that matches the real brand.
+
+## 3D experience
+
+Create a beautiful floating abstract fashion-inspired object.
+
+Possible concepts:
+
+- Flowing silk sculpture.
+- Sculptural fabric folds.
+- Translucent organic geometry.
+- Minimal metallic fashion object.
+
+Requirements:
+
+- Slow rotation.
+- Gentle floating.
+- Subtle mouse interaction.
+- Soft realistic lighting.
+- Elegant shadows.
+- Responsive sizing.
+- No excessive movement.
+
+Use Three.js and React Three Fiber.
+
+## Hero animations
+
+- Staggered headline reveal.
+- Smooth image entrance.
+- Subtle object rotation.
+- Gentle background movement.
+- CTA hover interaction.
+- Scroll indicator.
+
+HUMANIZE THIS SECTION. Fashion photography must remain the hero. The 3D object must complement the visual story rather than compete with the model, clothes, or headline.
+
+---
+
+# 05 — NEW ARRIVALS
+
+Create a sophisticated product showcase.
+
+## Layout
+
+- Editorial section heading.
+- Small collection introduction.
+- View All CTA.
+- Four product cards on desktop.
+- Responsive product grid.
+
+## Product cards
+
+Every product card should support:
+
+- Primary image.
+- Secondary hover image.
+- Product name.
+- Price.
+- Color options.
+- New Arrival badge when applicable.
+- Wishlist control.
+- Quick Add.
+- Product details navigation.
+
+## Interactions
+
+- Image transition.
+- Subtle image zoom.
+- Smooth hover effects.
+- Wishlist feedback.
+- Quick-add size selection.
+- Add-to-cart confirmation.
+
+Never use fake product prices or inventory.
+
+HUMANIZE THIS SECTION. Product cards must resemble carefully curated luxury fashion merchandising, not a generic marketplace grid.
+
+---
+
+# 06 — EDITORIAL CAMPAIGN SECTION
+
+Create a cinematic full-width campaign.
+
+## Design
+
+- Dark charcoal background.
+- Large fashion photograph.
+- Oversized editorial typography.
+- Collection name.
+- Short campaign description.
+- Explore Collection CTA.
+
+## Motion
+
+- Image reveal.
+- Subtle parallax.
+- Text fade-up.
+- Smooth transition into the next section.
+
+Use real campaign photography or properly licensed visual assets.
+
+HUMANIZE THIS SECTION. The campaign must communicate a coherent fashion mood, emotion, and identity rather than simply displaying a random stock image.
+
+---
+
+# 07 — BRAND STORY
+
+Create an editorial brand storytelling experience.
+
+## Content
+
+- Brand philosophy.
+- Brand introduction.
+- Fashion design approach.
+- Quality and craftsmanship claims only when verified.
+- Editorial photographs.
+- Discover Our Story CTA.
+
+## Layout
+
+Use an asymmetric image and typography composition.
+
+Alternate image and text placement where appropriate.
+
+HUMANIZE THIS SECTION. Brand storytelling must sound authentic, warm, distinctive, and written by a real human brand strategist. Never fabricate company history or sustainability claims.
+
+---
+
+# 08 — FEATURED COLLECTIONS
+
+Create two or three large collection panels.
+
+Each panel includes:
+
+- Large fashion photograph.
+- Collection title.
+- Short description.
+- Explore Collection link.
+
+## Interaction
+
+- Subtle image zoom.
+- Elegant text reveal.
+- Arrow animation.
+- Smooth navigation.
+
+Use consistent image ratios and editorial composition.
+
+HUMANIZE THIS SECTION. Every collection must have a clear visual identity and meaningful relationship with the products it contains.
+
+---
+
+# 09 — SIGNATURE 3D EDITORIAL EXPERIENCE
+
+Create a dedicated immersive 3D section.
+
+This is the second major 3D experience after the hero.
+
+## Visual concept
+
+A floating abstract fashion sculpture made from:
+
+- Flowing fabric-inspired geometry.
+- Soft metallic materials.
+- Translucent surfaces.
+- Warm neutral colors.
+
+## Behavior
+
+- Gentle rotation.
+- Slow floating movement.
+- Subtle scroll-based transformation.
+- Controlled lighting.
+- Smooth transitions.
+
+## Technical requirements
+
+- Use React Three Fiber.
+- Use Drei where useful.
+- Use optimized GLB assets.
+- Lazy-load the 3D scene.
+- Avoid unnecessary rendering loops.
+- Use demand-based rendering when appropriate.
+- Dispose of unused geometries and materials.
+- Use a static visual fallback for unsupported devices.
+- Respect reduced-motion settings.
+
+Never load multiple expensive 3D scenes simultaneously.
+
+HUMANIZE THIS SECTION. The sculpture must feel like a fashion art installation, not a random gaming object, technology illustration, or excessive WebGL experiment.
+
+---
+
+# 10 — BEST SELLERS
+
+Create a premium best-selling products section.
+
+## Features
+
+- Product grid.
+- Best Seller badges.
+- Product image gallery.
+- Color options.
+- Price.
+- Wishlist.
+- Quick Add.
+- View All Products.
+
+The product grid must be connected to actual database products.
+
+Do not mark products as best sellers unless there is real sales data or an explicitly configured merchandising decision.
+
+HUMANIZE THIS SECTION. Curate products with visual balance and a genuine fashion retail mindset.
+
+---
+
+# 11 — NEWSLETTER
+
+Create a minimal newsletter section.
+
+## Design
+
+- Charcoal background.
+- Large serif heading.
+- Short human-written description.
+- Email input.
+- Subscribe button.
+- Small privacy statement.
+
+## Functionality
+
+- Email validation.
+- Duplicate subscription handling.
+- Database persistence.
+- Loading state.
+- Success message.
+- Error message.
+- Unsubscribe support.
+
+Do not pretend to subscribe users if no email service is connected.
+
+HUMANIZE THIS SECTION. The subscription experience must feel personal, respectful, and valuable, never aggressive or spam-like.
+
+---
+
+# 12 — FOOTER
+
+Create a sophisticated multi-column footer.
+
+Include:
+
+### Brand
+
+- Logo.
+- Short brand statement.
+
+### Shopping
+
+- New Arrivals.
+- Collections.
+- All Products.
+- Best Sellers.
+
+### Customer Support
+
+- Contact.
+- Shipping Information.
+- Returns Policy.
+- FAQ.
+
+### Legal
+
+- Privacy Policy.
+- Terms & Conditions.
+- Cookie Policy.
+
+### Social
+
+- Instagram.
+- Pinterest.
+- Other configured social channels.
+
+### Additional
+
+- Newsletter entry.
+- Copyright.
+- Configurable country and currency selector if supported.
+
+HUMANIZE THIS SECTION. Footer content must be useful, organized, authentic, and visually consistent with the entire brand.
+
+---
+
+# 13 — SHOP PAGE
+
+Build a complete product discovery experience.
+
+## Layout
+
+- Page title.
+- Breadcrumbs.
+- Optional editorial banner.
+- Product count.
+- Filter controls.
+- Sorting.
+- Product grid.
+- Pagination or load more.
+
+## Filters
+
+- Category.
+- Collection.
+- Price range.
+- Size.
+- Color.
+- Availability.
+- Product tags.
+
+## Sorting
+
+- Featured.
+- Newest.
+- Price low to high.
+- Price high to low.
+- Best selling, only when real sales data exists.
+
+## Functional requirements
+
+- Filters must update actual results.
+- Sorting must work.
+- URL query parameters should preserve shareable filter states where practical.
+- Loading skeletons.
+- Empty search results.
+- Clear all filters.
+- Mobile filter drawer.
+
+HUMANIZE THIS PAGE. Product discovery must be effortless, visually balanced, and intuitive for real customers.
+
+---
+
+# 14 — COLLECTION DETAILS PAGE
+
+Create an individual collection page.
+
+Include:
+
+- Collection title.
+- Campaign image.
+- Collection introduction.
+- Product count.
+- Product filters.
+- Sorting.
+- Collection product grid.
+
+Allow collections to be managed from the admin panel.
+
+HUMANIZE THIS PAGE. Each collection must have a distinct editorial personality without breaking the global design system.
+
+---
+
+# 15 — PRODUCT DETAILS PAGE
+
+This is one of the most important conversion pages.
+
+## Desktop layout
+
+Left:
+- Large product gallery.
+- Main product photograph.
+- Additional photographs.
+- Thumbnail navigation.
+
+Right:
+- Product name.
+- Price.
+- Short description.
+- Color selector.
+- Size selector.
+- Size guide.
+- Quantity selector.
+- Add to Cart.
+- Buy Now.
+- Wishlist.
+
+## Additional information
+
+- Product description.
+- Fabric/material details.
+- Care instructions.
+- Size and fit information.
+- Shipping and return policy.
+- Availability.
+- Related products.
+
+Only display product attributes supplied by the actual catalog.
+
+## Interactions
+
+- Image gallery.
+- Zoom or fullscreen image viewer.
+- Color variant selection.
+- Size selection.
+- Quantity updates.
+- Add-to-cart feedback.
+- Wishlist.
+- Related products.
+
+HUMANIZE THIS PAGE. It must feel like a luxury brand product consultation, not a cluttered sales page. Product information must be clear, honest, and easy to understand.
+
+---
+
+# 16 — SHOPPING CART
+
+Build a functional cart system.
+
+Include:
+
+- Product thumbnail.
+- Product name.
+- Selected variant.
+- Selected size.
+- Unit price.
+- Quantity.
+- Line total.
+- Remove item.
+- Continue shopping.
+- Subtotal.
+- Shipping estimate.
+- Discount code.
+- Checkout CTA.
+
+## Requirements
+
+- Persistent cart for authenticated users.
+- Secure guest-cart handling.
+- Cart merge after login.
+- Server-side price verification.
+- Inventory validation.
+- Quantity limits.
+- Proper error states.
+
+Never trust prices supplied by the browser.
+
+HUMANIZE THIS PAGE. Cart interactions must feel transparent, reassuring, simple, and free from manipulative design.
+
+---
+
+# 17 — WISHLIST
+
+Implement a complete wishlist.
+
+Features:
+
+- Add product.
+- Remove product.
+- View saved products.
+- Move to cart.
+- Variant availability.
+- Empty wishlist state.
+
+Support authenticated users with database persistence.
+
+Guest wishlist persistence may use a clearly defined temporary browser mechanism, but must never be the only storage for core orders, inventory, or customer records.
+
+HUMANIZE THIS PAGE. A wishlist should feel like a personal fashion collection, not a database list.
+
+---
+
+# 18 — AUTHENTICATION AND CUSTOMER ACCOUNT
+
+Build customer authentication.
+
+Pages:
+
+- Register.
+- Login.
+- Forgot Password.
+- Reset Password.
+- Account Overview.
+- Profile.
+- Addresses.
+- Orders.
+- Order Details.
+
+## Security
+
+- Secure password hashing.
+- Protected routes.
+- Secure session handling.
+- CSRF protections where applicable.
+- Rate limiting.
+- Input validation.
+- Proper authorization.
+- No secrets in frontend code.
+
+HUMANIZE THIS EXPERIENCE. Authentication must feel welcoming, clear, and trustworthy rather than like a complicated technical form.
+
+---
+
+# 19 — CHECKOUT EXPERIENCE
+
+Build a real checkout workflow.
+
+## Checkout steps
+
+1. Customer information.
+2. Shipping address.
+3. Delivery method.
+4. Payment method.
+5. Order review.
+6. Order confirmation.
+
+## Payment architecture
+
+Build a payment provider adapter.
+
+Do not hardcode a payment gateway.
+
+Support configurable providers such as:
+
+- Cash on Delivery, where business policy allows.
+- A suitable local payment gateway.
+- Stripe, only if merchant eligibility and country support are verified.
+
+## Critical payment rules
+
+- Never store raw card numbers.
+- Never store CVV.
+- Never trust browser-calculated totals.
+- Verify payment status on the server.
+- Verify payment webhooks.
+- Protect against duplicate payment callbacks.
+- Prevent duplicate order creation.
+- Maintain an order status history.
+
+HUMANIZE THIS PAGE. Checkout must be simple, reassuring, transparent about charges, and free of unnecessary distractions.
+
+---
+
+# 20 — ORDER MANAGEMENT
+
+Implement:
+
+- Unique order number.
+- Customer details.
+- Order items.
+- Product variants.
+- Payment status.
+- Fulfillment status.
+- Shipping details.
+- Subtotal.
+- Discount.
+- Shipping cost.
+- Final total.
+- Order timeline.
+
+Order statuses:
+
+- Pending.
+- Confirmed.
+- Processing.
+- Shipped.
+- Delivered.
+- Cancelled.
+- Refunded.
+
+Implement legitimate state transitions and audit history.
+
+HUMANIZE THIS FEATURE. Order tracking must communicate clearly and honestly, with meaningful status descriptions.
+
+---
+
+# 21 — ADMIN DASHBOARD
+
+Create a separate secure administration interface.
+
+## Dashboard overview
+
+- Total orders.
+- Total revenue.
+- Total products.
+- Low-stock products.
+- Recent orders.
+- Pending orders.
+- Sales overview.
+- Inventory overview.
+
+Use real database information.
+
+## Product management
+
+- Create product.
+- Edit product.
+- Delete or archive product.
+- Upload product images.
+- Manage variants.
+- Manage prices.
+- Manage inventory.
+- Manage categories.
+- Manage collections.
+- Manage product tags.
+
+## Order management
+
+- View orders.
+- View order details.
+- Update fulfillment status.
+- Manage cancellations.
+- Process authorized refunds.
+- View payment status.
+
+## Customer management
+
+- View customer profiles.
+- View customer order history.
+- Manage appropriate account status.
+
+## Marketing management
+
+- Coupon management.
+- Discount management.
+- Homepage campaign management.
+- Newsletter subscribers.
+
+## Admin security
+
+- Role-based permissions.
+- Server-side authorization.
+- Secure admin routes.
+- Audit logs.
+- Confirmation before destructive actions.
+
+HUMANIZE THIS DASHBOARD. It must feel like a carefully designed professional retail operations tool, not a generic admin template.
+
+---
+
+# 22 — SEARCH EXPERIENCE
+
+Implement a sophisticated product search.
+
+Features:
+
+- Search overlay.
+- Search input.
+- Product suggestions.
+- Recent searches, with user consent where appropriate.
+- Search result page.
+- Matching products.
+- No-results state.
+- Clear search.
+- Keyboard navigation.
+
+Search must use actual product data.
+
+HUMANIZE THIS FEATURE. Search must behave like an intelligent and helpful shopping assistant, not an artificial or confusing search box.
+
+---
+
+# 23 — BACKEND ARCHITECTURE
+
+Use Next.js App Router as the primary application framework.
+
+Use:
+
+- TypeScript.
+- Server Components by default.
+- Client Components only when necessary.
+- Route Handlers for API endpoints.
+- Server Actions for appropriate server mutations.
+- Service layer for business logic.
+- Repository or data-access layer.
+- Zod validation.
+- Prisma ORM.
+- PostgreSQL.
+
+Keep business logic separate from presentation.
+
+Never put database credentials or payment secrets in client components.
+
+## API organization
+
+Organize endpoints around:
+
+- Authentication.
+- Products.
+- Collections.
+- Categories.
+- Search.
+- Cart.
+- Wishlist.
+- Checkout.
+- Payments.
+- Orders.
+- Customers.
+- Admin.
+- Newsletter.
+- Uploads.
+
+HUMANIZE THIS ARCHITECTURE. The codebase must be understandable, maintainable, logically structured, and designed for future developers.
+
+---
+
+# 24 — DATABASE ARCHITECTURE
+
+Use PostgreSQL with Prisma.
+
+Design a normalized and relational database.
+
+Core models:
+
+1. User
+2. Account
+3. Session
+4. VerificationToken
+5. Address
+6. Product
+7. ProductImage
+8. ProductVariant
+9. Category
+10. Collection
+11. ProductCategory
+12. ProductCollection
+13. Inventory
+14. Cart
+15. CartItem
+16. Wishlist
+17. WishlistItem
+18. Coupon
+19. Order
+20. OrderItem
+21. Payment
+22. Shipment
+23. NewsletterSubscriber
+24. Review, only if enabled
+25. AuditLog
+26. SiteSetting
+
+## Database rules
+
+- Use proper primary keys.
+- Use foreign keys.
+- Add appropriate indexes.
+- Use unique constraints.
+- Use decimal types for monetary values.
+- Use explicit currency codes.
+- Use timestamps.
+- Add soft deletion where appropriate.
+- Use transactions for critical checkout operations.
+- Maintain inventory consistency.
+- Prevent duplicate order processing.
+
+## Important relationships
+
+A product can have multiple images, variants, categories, and collections.
+
+A customer can have multiple addresses, carts, wishlists, and orders.
+
+An order can contain multiple order items and payment records.
+
+Inventory must be tracked by the appropriate product variant.
+
+Never store critical order data only in browser storage.
+
+HUMANIZE THIS DATABASE DESIGN. Model real retail relationships accurately instead of creating arbitrary tables simply to increase complexity.
+
+---
+
+# 25 — COMPLETE FOLDER AND FILE STRUCTURE
+
+Use the following proposed project architecture.
+
+```text
+luxury-fashion-store/
+│
+├── public/
+│   ├── fonts/
+│   ├── images/
+│   │   ├── brand/
+│   │   ├── campaigns/
+│   │   ├── collections/
+│   │   ├── products/
+│   │   └── editorial/
+│   ├── models/
+│   │   └── fashion-sculpture.glb
+│   ├── icons/
+│   └── textures/
+│
+├── prisma/
+│   ├── schema.prisma
+│   ├── seed.ts
+│   └── migrations/
+│
+├── src/
+│   │
+│   ├── app/
+│   │   ├── (store)/
+│   │   │   ├── page.tsx
+│   │   │   ├── shop/
+│   │   │   │   └── page.tsx
+│   │   │   ├── collections/
+│   │   │   │   └── [slug]/
+│   │   │   │       └── page.tsx
+│   │   │   ├── products/
+│   │   │   │   └── [slug]/
+│   │   │   │       └── page.tsx
+│   │   │   ├── cart/
+│   │   │   │   └── page.tsx
+│   │   │   ├── wishlist/
+│   │   │   │   └── page.tsx
+│   │   │   ├── checkout/
+│   │   │   │   └── page.tsx
+│   │   │   ├── search/
+│   │   │   │   └── page.tsx
+│   │   │   ├── about/
+│   │   │   │   └── page.tsx
+│   │   │   └── contact/
+│   │   │       └── page.tsx
+│   │   │
+│   │   ├── (auth)/
+│   │   │   ├── login/
+│   │   │   ├── register/
+│   │   │   ├── forgot-password/
+│   │   │   └── reset-password/
+│   │   │
+│   │   ├── account/
+│   │   │   ├── page.tsx
+│   │   │   ├── profile/
+│   │   │   ├── addresses/
+│   │   │   ├── orders/
+│   │   │   └── orders/[id]/
+│   │   │
+│   │   ├── admin/
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   ├── products/
+│   │   │   ├── categories/
+│   │   │   ├── collections/
+│   │   │   ├── inventory/
+│   │   │   ├── orders/
+│   │   │   ├── customers/
+│   │   │   ├── coupons/
+│   │   │   ├── newsletter/
+│   │   │   └── settings/
+│   │   │
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   ├── products/
+│   │   │   ├── collections/
+│   │   │   ├── cart/
+│   │   │   ├── wishlist/
+│   │   │   ├── checkout/
+│   │   │   ├── payments/
+│   │   │   ├── orders/
+│   │   │   ├── newsletter/
+│   │   │   └── uploads/
+│   │   │
+│   │   ├── layout.tsx
+│   │   ├── globals.css
+│   │   ├── error.tsx
+│   │   ├── loading.tsx
+│   │   ├── not-found.tsx
+│   │   ├── robots.ts
+│   │   └── sitemap.ts
+│   │
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── AnnouncementBar.tsx
+│   │   │   ├── MobileNavigation.tsx
+│   │   │   └── NavigationOverlay.tsx
+│   │   │
+│   │   ├── home/
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── NewArrivals.tsx
+│   │   │   ├── CampaignSection.tsx
+│   │   │   ├── BrandStory.tsx
+│   │   │   ├── FeaturedCollections.tsx
+│   │   │   ├── ThreeDEditorial.tsx
+│   │   │   ├── BestSellers.tsx
+│   │   │   └── Newsletter.tsx
+│   │   │
+│   │   ├── product/
+│   │   │   ├── ProductCard.tsx
+│   │   │   ├── ProductGrid.tsx
+│   │   │   ├── ProductGallery.tsx
+│   │   │   ├── ProductInfo.tsx
+│   │   │   ├── ProductFilters.tsx
+│   │   │   ├── ProductSort.tsx
+│   │   │   ├── VariantSelector.tsx
+│   │   │   ├── SizeSelector.tsx
+│   │   │   └── QuickAdd.tsx
+│   │   │
+│   │   ├── cart/
+│   │   ├── wishlist/
+│   │   ├── checkout/
+│   │   ├── account/
+│   │   ├── admin/
+│   │   ├── forms/
+│   │   ├── ui/
+│   │   └── feedback/
+│   │
+│   ├── features/
+│   │   ├── auth/
+│   │   ├── products/
+│   │   ├── collections/
+│   │   ├── inventory/
+│   │   ├── cart/
+│   │   ├── wishlist/
+│   │   ├── checkout/
+│   │   ├── payments/
+│   │   ├── orders/
+│   │   ├── customers/
+│   │   └── newsletter/
+│   │
+│   ├── lib/
+│   │   ├── prisma.ts
+│   │   ├── auth.ts
+│   │   ├── validations/
+│   │   ├── security/
+│   │   ├── payments/
+│   │   ├── storage/
+│   │   ├── seo/
+│   │   ├── currency/
+│   │   └── utils/
+│   │
+│   ├── hooks/
+│   │   ├── useCart.ts
+│   │   ├── useWishlist.ts
+│   │   ├── useMediaQuery.ts
+│   │   └── useReducedMotion.ts
+│   │
+│   ├── animations/
+│   │   ├── gsap-config.ts
+│   │   ├── scroll-reveals.ts
+│   │   ├── page-transitions.ts
+│   │   └── motion-presets.ts
+│   │
+│   ├── three/
+│   │   ├── scenes/
+│   │   ├── models/
+│   │   ├── materials/
+│   │   ├── lights/
+│   │   └── fallbacks/
+│   │
+│   ├── services/
+│   │   ├── product.service.ts
+│   │   ├── cart.service.ts
+│   │   ├── order.service.ts
+│   │   ├── inventory.service.ts
+│   │   ├── payment.service.ts
+│   │   └── email.service.ts
+│   │
+│   ├── server/
+│   │   ├── repositories/
+│   │   ├── actions/
+│   │   ├── permissions/
+│   │   └── queries/
+│   │
+│   ├── types/
+│   │   ├── product.ts
+│   │   ├── order.ts
+│   │   ├── cart.ts
+│   │   └── user.ts
+│   │
+│   └── config/
+│       ├── site.ts
+│       ├── navigation.ts
+│       ├── brand.ts
+│       └── environment.ts
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   ├── e2e/
+│   ├── accessibility/
+│   └── fixtures/
+│
+├── scripts/
+│   ├── seed-database.ts
+│   └── validate-environment.ts
+│
+├── .env.example
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.mjs
+├── prisma.config.ts
+├── tsconfig.json
+├── vitest.config.ts
+├── playwright.config.ts
+└── README.md
+```
+
+This is the target architecture, not a requirement to create meaningless empty files.
+
+Every file must have a clear responsibility.
+
+Use route groups appropriately. Do not duplicate components or create unnecessary abstraction layers.
+
+HUMANIZE THIS STRUCTURE. Organize files so a human developer can easily understand where every feature, component, service, and business rule belongs.
+
+---
+
+# 26 — TECHNICAL IMPLEMENTATION RULES
+
+## Frontend
+
+- Next.js App Router.
+- React.
+- TypeScript.
+- Tailwind CSS.
+- Radix UI primitives.
+- Lucide React icons.
+
+## Animation
+
+- GSAP.
+- ScrollTrigger.
+- CSS transitions.
+- Intersection Observer where suitable.
+
+## 3D
+
+- Three.js.
+- React Three Fiber.
+- Drei.
+- Optimized GLB assets.
+
+## Backend
+
+- Next.js Route Handlers.
+- Server Actions where appropriate.
+- Service layer.
+- Zod validation.
+- Secure server-side business logic.
+
+## Database
+
+- PostgreSQL.
+- Prisma ORM.
+- Proper migrations.
+- Seed scripts.
+
+## Forms
+
+- React Hook Form.
+- Zod schemas.
+- Accessible validation.
+- Clear feedback states.
+
+## Testing
+
+- Vitest.
+- React Testing Library.
+- Playwright.
+- Accessibility testing.
+
+## Engineering requirements
+
+- Strict TypeScript.
+- No unnecessary any types.
+- No massive monolithic components.
+- No duplicated business logic.
+- No unnecessary useEffect.
+- No direct database access from browser code.
+- No exposed secrets.
+- No fake API responses in production.
+- No broken routes.
+- No unhandled errors.
+
+HUMANIZE THIS IMPLEMENTATION. Code must be readable, meaningful, maintainable, and written for real developers rather than merely generated to satisfy a visual demonstration.
+
+---
+
+# 27 — RESPONSIVE DESIGN
+
+Design mobile-first.
+
+Mandatory viewport testing:
+
+- 360px.
+- 375px.
+- 390px.
+- 430px.
+- 768px.
+- 1024px.
+- 1280px.
+- 1440px.
+- 1920px.
+
+## Mobile rules
+
+- No horizontal overflow.
+- No clipped text.
+- Proper image ratios.
+- Accessible menu.
+- Functional shopping interactions.
+- Optimized product cards.
+- Touch-friendly controls.
+- Reduced 3D complexity.
+- No unnecessary animation.
+- Correct mobile checkout layout.
+
+## Tablet rules
+
+- Balanced grids.
+- Appropriate typography.
+- Proper navigation adaptation.
+- No oversized desktop layouts squeezed into tablet widths.
+
+HUMANIZE THIS RESPONSIVE DESIGN. The mobile experience must feel intentionally designed for phones, not like a compressed desktop website.
+
+---
+
+# 28 — ACCESSIBILITY
+
+Target WCAG 2.2 AA.
+
+Implement:
+
+- Semantic HTML.
+- Keyboard navigation.
+- Visible focus states.
+- Accessible forms.
+- Meaningful image alt text.
+- Proper heading hierarchy.
+- Sufficient contrast.
+- Accessible dialogs.
+- Accessible dropdowns.
+- Reduced-motion support.
+- Screen-reader-friendly labels.
+- Error messages associated with fields.
+
+Do not rely on color alone to communicate errors or status.
+
+HUMANIZE THIS ACCESSIBILITY EXPERIENCE. Make the store genuinely comfortable and usable for people with different abilities and interaction preferences.
+
+---
+
+# 29 — SECURITY AND DATA PROTECTION
+
+Follow secure application development practices.
+
+Implement:
+
+- Server-side authorization.
+- Secure authentication.
+- Password hashing through a trusted authentication library.
+- Input validation.
+- Rate limiting.
+- Secure session management.
+- CSRF protection where applicable.
+- Safe file uploads.
+- File type and size validation.
+- Secure HTTP headers.
+- Environment variable protection.
+- Payment webhook verification.
+- Audit logging.
+- Database access restrictions.
+
+Never:
+
+- Expose API secrets.
+- Trust browser-calculated prices.
+- Accept arbitrary file uploads.
+- Store raw card details.
+- Allow users to access other users' orders.
+- Expose admin functionality to customers.
+- Use hardcoded production credentials.
+
+HUMANIZE THIS SECURITY EXPERIENCE. Security should protect customers without creating confusing or unnecessarily difficult interactions.
+
+---
+
+# 30 — SEO AND DISCOVERABILITY
+
+Implement:
+
+- Page-specific metadata.
+- Product titles.
+- Product descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- XML sitemap.
+- Robots configuration.
+- Product structured data.
+- Breadcrumb structured data.
+- Organization structured data where appropriate.
+- Clean URLs.
+- Optimized images.
+- Descriptive alt text.
+
+Only publish truthful product prices, stock information, ratings, and availability.
+
+HUMANIZE THIS SEO IMPLEMENTATION. Write natural product descriptions and page titles for actual shoppers, not keyword-stuffed robotic text.
+
+---
+
+# 31 — PERFORMANCE OPTIMIZATION
+
+Prioritize:
+
+- Fast initial rendering.
+- Server rendering where appropriate.
+- Minimal client JavaScript.
+- Optimized image formats.
+- Responsive image sizes.
+- Lazy-loaded images.
+- Lazy-loaded 3D scenes.
+- Font optimization.
+- Code splitting.
+- Avoid unnecessary dependencies.
+- Avoid layout shifts.
+- Efficient database queries.
+- Caching where safe.
+- Responsive animation quality.
+
+Use Core Web Vitals as performance indicators.
+
+Measure actual results rather than claiming arbitrary performance scores.
+
+Never sacrifice usability or image quality to chase a synthetic score.
+
+HUMANIZE THIS PERFORMANCE. The website must feel smooth and responsive to real shoppers, including people using slower devices and connections.
+
+---
+
+# 32 — FUNCTIONALITY ANTI-FAKE RULES
+
+THIS SECTION IS CRITICAL.
+
+Never deliver:
+
+- Non-functional buttons.
+- Fake cart updates.
+- Fake checkout.
+- Fake payment confirmation.
+- Fake search.
+- Fake filters.
+- Fake authentication.
+- Fake admin dashboard metrics.
+- Fake order histories.
+- Fake inventory.
+- Non-functional newsletter subscriptions.
+- Dead navigation links.
+- Empty placeholder pages disguised as complete pages.
+
+Every visible interactive element must have a real purpose.
+
+If an external integration cannot be configured because credentials are missing:
+
+1. Implement the integration interface.
+2. Document required credentials.
+3. Provide a safe development mode.
+4. Display a clear unavailable state.
+5. Never claim the integration is operational.
+
+HUMANIZE THIS FUNCTIONALITY. Every feature must work in a way that a real customer or store administrator can understand and trust.
+
+---
+
+# 33 — TESTING AND QUALITY ASSURANCE
+
+Test the complete application.
+
+## Visual QA
+
+- Compare every section with the approved design direction.
+- Check typography.
+- Check spacing.
+- Check colors.
+- Check image quality.
+- Check section alignment.
+- Check responsive layouts.
+- Check 3D positioning.
+
+## Functional QA
+
+- Navigation.
+- Product search.
+- Product filtering.
+- Product sorting.
+- Product details.
+- Variant selection.
+- Wishlist.
+- Cart.
+- Coupon validation.
+- Checkout.
+- Authentication.
+- Order creation.
+- Order history.
+- Admin product management.
+- Inventory.
+- Newsletter.
+
+## Technical QA
+
+- TypeScript checks.
+- ESLint.
+- Unit tests.
+- Integration tests.
+- Browser tests.
+- Database migration checks.
+- Authentication security checks.
+- Payment webhook tests.
+- Accessibility tests.
+- Broken link checks.
+- Console errors.
+- Network failures.
+
+## Final acceptance criteria
+
+A feature is complete only when:
+
+1. Its UI exists.
+2. Its functionality works.
+3. Its data is correctly persisted where required.
+4. Its errors are handled.
+5. Its responsive behavior is verified.
+6. Its accessibility is considered.
+7. Its tests pass.
+
+HUMANIZE THIS QA PROCESS. Review the application like a critical human customer, designer, and experienced developer. Do not approve your own unfinished work.
+
+---
+
+# 34 — DEVELOPMENT WORKFLOW AND CHECKPOINTS
+
+Do not attempt to generate the entire application in one uncontrolled pass.
+
+Follow these checkpoints.
+
+## CHECKPOINT 01 — Discovery and Architecture
+
+- Inspect existing repository.
+- Understand existing dependencies.
+- Confirm project constraints.
+- Define application architecture.
+- Define database schema.
+- Define design tokens.
+- Create development roadmap.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 02 — Design Foundation
+
+- Fonts.
+- Colors.
+- Spacing.
+- Buttons.
+- Header.
+- Footer.
+- Global components.
+- Responsive foundation.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 03 — Homepage
+
+- Hero.
+- New Arrivals.
+- Campaign.
+- Brand Story.
+- Collections.
+- 3D Editorial.
+- Best Sellers.
+- Newsletter.
+- Footer.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 04 — Shopping Experience
+
+- Shop.
+- Product listing.
+- Filters.
+- Sorting.
+- Product details.
+- Product gallery.
+- Wishlist.
+- Cart.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 05 — Backend and Database
+
+- PostgreSQL.
+- Prisma.
+- Authentication.
+- Products.
+- Categories.
+- Collections.
+- Inventory.
+- Cart.
+- Wishlist.
+- Orders.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 06 — Checkout and Payments
+
+- Customer information.
+- Shipping.
+- Payment integration.
+- Order creation.
+- Payment verification.
+- Confirmation.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 07 — Admin Dashboard
+
+- Dashboard.
+- Product management.
+- Inventory.
+- Orders.
+- Customers.
+- Coupons.
+- Settings.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 08 — Advanced Experience
+
+- GSAP.
+- ScrollTrigger.
+- Three.js.
+- Responsive 3D.
+- Page transitions.
+- Micro-interactions.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 09 — Security and SEO
+
+- Permissions.
+- Validation.
+- Security review.
+- Metadata.
+- Structured data.
+- Accessibility.
+
+HUMANIZE THIS CHECKPOINT.
+
+## CHECKPOINT 10 — Final QA and Delivery
+
+- Build verification.
+- Test execution.
+- Visual review.
+- Mobile review.
+- Performance review.
+- Documentation.
+- Deployment preparation.
+
+HUMANIZE THIS CHECKPOINT.
+
+Do not skip checkpoints.
+
+Do not claim a checkpoint is complete without evidence.
+
+---
+
+# 35 — FINAL ANTI-PROMPT: ABSOLUTELY FORBIDDEN
+
+The following practices are prohibited:
+
+### DESIGN
+
+- Generic AI website layouts.
+- Repetitive card grids.
+- Excessive rounded corners.
+- Excessive glassmorphism.
+- Random gradients.
+- Random neon colors.
+- Oversized unnecessary icons.
+- Poor typography.
+- Inconsistent spacing.
+- Unbalanced image compositions.
+- Excessive visual effects.
+- Unnecessary 3D.
+- Generic stock photography.
+- Inconsistent page designs.
+
+### CONTENT
+
+- Robotic descriptions.
+- Repeated marketing phrases.
+- Fake testimonials.
+- Fake customer reviews.
+- Fabricated brand history.
+- Fabricated awards.
+- Unverified sustainability claims.
+- Fake discounts.
+- Fake scarcity messages.
+
+### DEVELOPMENT
+
+- Monolithic files.
+- Duplicated code.
+- Unnecessary packages.
+- Exposed secrets.
+- Fake API endpoints.
+- Hardcoded production credentials.
+- Unvalidated inputs.
+- Insecure database access.
+- Broken forms.
+- Dead buttons.
+- Unnecessary localStorage for core business data.
+- Unhandled errors.
+- Empty components presented as finished work.
+
+### PROJECT DELIVERY
+
+- Do not stop after the homepage.
+- Do not stop after frontend styling.
+- Do not skip database integration.
+- Do not fake backend functionality.
+- Do not skip mobile testing.
+- Do not skip accessibility.
+- Do not skip final verification.
+- Do not mark unfinished features as complete.
+
+HUMANIZE EVERYTHING. There must be no obvious AI-generated design patterns, repetitive layouts, robotic content, or careless engineering decisions.
+
+---
+
+# 36 — FINAL DELIVERY REQUIREMENTS
+
+Deliver:
+
+1. Complete source code.
+2. Complete folder structure.
+3. Functional frontend.
+4. Functional backend.
+5. PostgreSQL database schema.
+6. Prisma migrations.
+7. Seed data using clearly identified demo records.
+8. Authentication.
+9. Shopping cart.
+10. Wishlist.
+11. Checkout architecture.
+12. Admin dashboard.
+13. 3D experiences.
+14. Animation system.
+15. Responsive layouts.
+16. Test suite.
+17. Environment variable example.
+18. Installation instructions.
+19. Development instructions.
+20. Production deployment instructions.
+21. Integration setup documentation.
+22. Known limitations and outstanding tasks.
+
+Provide a clear README.md.
+
+Never include actual production secrets in documentation.
+
+## FINAL QUALITY OBJECTIVE
+
+Build an extraordinary luxury fashion eCommerce experience that combines:
+
+CRETA SYSTEMS-INSPIRED VISUAL SOPHISTICATION
++
+LUXURY EDITORIAL FASHION ART DIRECTION
++
+HYBRID LIGHT AND DARK DESIGN
++
+MEDIUM-INTENSITY IMMERSIVE 3D
++
+ADVANCED GSAP MOTION DESIGN
++
+COMPLETE FULL-STACK ECOMMERCE FUNCTIONALITY
++
+HUMAN-CENTERED USER EXPERIENCE
+
+The website must be beautiful, usable, fast, secure, accessible, maintainable, and commercially functional.
+
+The design must feel human-created.
+
+The content must feel human-written.
+
+The code must feel human-engineered.
+
+HUMANIZE THE ENTIRE PROJECT.
+
+THIS IS THE FINAL NON-NEGOTIABLE REQUIREMENT.
+
+DO NOT COMPROMISE ON DESIGN QUALITY, FUNCTIONALITY, PERFORMANCE, OR HUMANIZATION.
